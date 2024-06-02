@@ -11,7 +11,7 @@
         }
     }
 
-    ready(function () {
+    ready(function() {
         function handleClick(event) {
             event.preventDefault();
             const params = new URLSearchParams(window.location.search);
@@ -22,7 +22,7 @@
             }
         }
 
-        document.querySelectorAll('.cancel-link').forEach(function (el) {
+        document.querySelectorAll('.cancel-link').forEach(function(el) {
             el.addEventListener('click', handleClick);
         });
     });

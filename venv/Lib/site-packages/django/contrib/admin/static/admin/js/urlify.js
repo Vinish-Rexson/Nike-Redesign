@@ -126,7 +126,7 @@
     ];
 
     const Downcoder = {
-        'Initialize': function () {
+        'Initialize': function() {
             if (Downcoder.map) { // already made
                 return;
             }
@@ -140,7 +140,7 @@
 
     function downcode(slug) {
         Downcoder.Initialize();
-        return slug.replace(Downcoder.regex, function (m) {
+        return slug.replace(Downcoder.regex, function(m) {
             return Downcoder.map[m];
         });
     }
@@ -165,6 +165,5 @@
         s = s.substring(0, num_chars); // trim to first num_chars chars
         return s.replace(/-+$/g, ''); // trim any trailing hyphens
     }
-
     window.URLify = URLify;
 }
