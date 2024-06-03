@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
-/* line 23, static/CSS/nav.scss */
+/* line 23, static/CSS/navbar.scss */
 body {
   background: #eaeef6;
   font-family: 'Open Sans', sans-serif; }
 
-/* line 27, static/CSS/nav.scss */
+/* line 27, static/CSS/navbar.scss */
 .navbar {
   position: absolute;
   top: 1rem;
@@ -14,7 +14,7 @@ body {
   padding: 1rem 0;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
   height: calc(100vh - 4rem); }
-  /* line 37, static/CSS/nav.scss */
+  /* line 37, static/CSS/navbar.scss */
   .navbar__link {
     position: relative;
     display: flex;
@@ -24,7 +24,7 @@ body {
     width: 5.5rem;
     color: #6a778e;
     transition: 250ms ease all; }
-    /* line 46, static/CSS/nav.scss */
+    /* line 46, static/CSS/navbar.scss */
     .navbar__link span {
       position: absolute;
       left: 100%;
@@ -37,17 +37,17 @@ body {
       padding: 0.75rem;
       transition: 250ms ease all;
       border-radius: 17.5px; }
-    /* line 59, static/CSS/nav.scss */
+    /* line 59, static/CSS/navbar.scss */
     .navbar__link:hover {
       color: #fff; }
-    /* line 64, static/CSS/nav.scss */
+    /* line 64, static/CSS/navbar.scss */
     .navbar:not(:hover) .navbar__link:focus span, .navbar__link:hover span {
       opacity: 1;
       transform: translate(0); }
-  /* line 70, static/CSS/nav.scss */
+  /* line 70, static/CSS/navbar.scss */
   .navbar__menu {
     position: relative; }
-  /* line 75, static/CSS/nav.scss */
+  /* line 75, static/CSS/navbar.scss */
   .navbar__item:last-child:before {
     content: '';
     position: absolute;
@@ -60,13 +60,13 @@ body {
     background: #406ff3;
     border-radius: 17.5px;
     transition: 250ms cubic-bezier(1, 0.2, 0.1, 1.2) all; }
-  /* line 94, static/CSS/nav.scss */
+  /* line 94, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(1):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(1) ~ li:hover ~ li:last-child:before {
     opacity: 1; }
-  /* line 98, static/CSS/nav.scss */
+  /* line 98, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(1):last-child:hover:before, .navbar__item:first-child:nth-last-child(1) ~ li:last-child:hover:before {
     opacity: 1; }
-  /* line 110, static/CSS/nav.scss */
+  /* line 110, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(1):last-child:hover:before, .navbar__item:first-child:nth-last-child(1) ~ li:last-child:hover:before {
     top: 0%;
     animation: gooeyEffect-1 250ms 1; }
@@ -78,13 +78,13 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 94, static/CSS/nav.scss */
+  /* line 94, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(2):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(2) ~ li:hover ~ li:last-child:before {
     opacity: 1; }
-  /* line 98, static/CSS/nav.scss */
+  /* line 98, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(2):last-child:hover:before, .navbar__item:first-child:nth-last-child(2) ~ li:last-child:hover:before {
     opacity: 1; }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(2):nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(2) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(2) ~ li:nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(2) ~ li ~ li:last-child:before {
@@ -98,7 +98,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 110, static/CSS/nav.scss */
+  /* line 110, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(2):last-child:hover:before, .navbar__item:first-child:nth-last-child(2) ~ li:last-child:hover:before {
     top: 50%;
     animation: gooeyEffect-2 250ms 1; }
@@ -110,13 +110,13 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 94, static/CSS/nav.scss */
+  /* line 94, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(3):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(3) ~ li:hover ~ li:last-child:before {
     opacity: 1; }
-  /* line 98, static/CSS/nav.scss */
+  /* line 98, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(3):last-child:hover:before, .navbar__item:first-child:nth-last-child(3) ~ li:last-child:hover:before {
     opacity: 1; }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(3):nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(3) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(3) ~ li:nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(3) ~ li ~ li:last-child:before {
@@ -130,7 +130,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(3):nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(3) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(3) ~ li:nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(3) ~ li ~ li:last-child:before {
@@ -144,7 +144,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 110, static/CSS/nav.scss */
+  /* line 110, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(3):last-child:hover:before, .navbar__item:first-child:nth-last-child(3) ~ li:last-child:hover:before {
     top: 66.66667%;
     animation: gooeyEffect-3 250ms 1; }
@@ -156,13 +156,13 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 94, static/CSS/nav.scss */
+  /* line 94, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(4):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(4) ~ li:hover ~ li:last-child:before {
     opacity: 1; }
-  /* line 98, static/CSS/nav.scss */
+  /* line 98, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(4):last-child:hover:before, .navbar__item:first-child:nth-last-child(4) ~ li:last-child:hover:before {
     opacity: 1; }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(4):nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(4) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(4) ~ li:nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(4) ~ li ~ li:last-child:before {
@@ -176,7 +176,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(4):nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(4) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(4) ~ li:nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(4) ~ li ~ li:last-child:before {
@@ -190,7 +190,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(4):nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(4) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(4) ~ li:nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(4) ~ li ~ li:last-child:before {
@@ -204,7 +204,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 110, static/CSS/nav.scss */
+  /* line 110, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(4):last-child:hover:before, .navbar__item:first-child:nth-last-child(4) ~ li:last-child:hover:before {
     top: 75%;
     animation: gooeyEffect-4 250ms 1; }
@@ -216,13 +216,13 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 94, static/CSS/nav.scss */
+  /* line 94, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(5):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(5) ~ li:hover ~ li:last-child:before {
     opacity: 1; }
-  /* line 98, static/CSS/nav.scss */
+  /* line 98, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(5):last-child:hover:before, .navbar__item:first-child:nth-last-child(5) ~ li:last-child:hover:before {
     opacity: 1; }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(5):nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(5) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(5) ~ li:nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(5) ~ li ~ li:last-child:before {
@@ -236,7 +236,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(5):nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(5) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(5) ~ li:nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(5) ~ li ~ li:last-child:before {
@@ -250,7 +250,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(5):nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(5) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(5) ~ li:nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(5) ~ li ~ li:last-child:before {
@@ -264,7 +264,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(5):nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(5) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(5) ~ li:nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(5) ~ li ~ li:last-child:before {
@@ -278,7 +278,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 110, static/CSS/nav.scss */
+  /* line 110, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(5):last-child:hover:before, .navbar__item:first-child:nth-last-child(5) ~ li:last-child:hover:before {
     top: 80%;
     animation: gooeyEffect-5 250ms 1; }
@@ -290,13 +290,13 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 94, static/CSS/nav.scss */
+  /* line 94, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(6):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:hover ~ li:last-child:before {
     opacity: 1; }
-  /* line 98, static/CSS/nav.scss */
+  /* line 98, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(6):last-child:hover:before, .navbar__item:first-child:nth-last-child(6) ~ li:last-child:hover:before {
     opacity: 1; }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(6):nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(6) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(6) ~ li ~ li:last-child:before {
@@ -310,7 +310,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(6):nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(6) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(6) ~ li ~ li:last-child:before {
@@ -324,7 +324,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(6):nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(6) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(6) ~ li ~ li:last-child:before {
@@ -338,7 +338,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(6):nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(6) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(6) ~ li ~ li:last-child:before {
@@ -352,7 +352,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(6):nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(6) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(6) ~ li ~ li:last-child:before {
@@ -366,7 +366,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 110, static/CSS/nav.scss */
+  /* line 110, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(6):last-child:hover:before, .navbar__item:first-child:nth-last-child(6) ~ li:last-child:hover:before {
     top: 83.33333%;
     animation: gooeyEffect-6 250ms 1; }
@@ -378,13 +378,13 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 94, static/CSS/nav.scss */
+  /* line 94, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(7):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:hover ~ li:last-child:before {
     opacity: 1; }
-  /* line 98, static/CSS/nav.scss */
+  /* line 98, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(7):last-child:hover:before, .navbar__item:first-child:nth-last-child(7) ~ li:last-child:hover:before {
     opacity: 1; }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(7):nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
@@ -398,7 +398,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(7):nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
@@ -412,7 +412,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(7):nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
@@ -426,7 +426,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(7):nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
@@ -440,7 +440,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(7):nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
@@ -454,7 +454,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(7):nth-child(6):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(6):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
@@ -468,7 +468,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 110, static/CSS/nav.scss */
+  /* line 110, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(7):last-child:hover:before, .navbar__item:first-child:nth-last-child(7) ~ li:last-child:hover:before {
     top: 85.71429%;
     animation: gooeyEffect-7 250ms 1; }
@@ -480,13 +480,13 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 94, static/CSS/nav.scss */
+  /* line 94, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(8):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:hover ~ li:last-child:before {
     opacity: 1; }
-  /* line 98, static/CSS/nav.scss */
+  /* line 98, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(8):last-child:hover:before, .navbar__item:first-child:nth-last-child(8) ~ li:last-child:hover:before {
     opacity: 1; }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(8):nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
@@ -500,7 +500,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(8):nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
@@ -514,7 +514,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(8):nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
@@ -528,7 +528,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(8):nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
@@ -542,7 +542,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(8):nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
@@ -556,7 +556,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(8):nth-child(6):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(6):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
@@ -570,7 +570,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(8):nth-child(7):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(7):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
@@ -584,7 +584,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 110, static/CSS/nav.scss */
+  /* line 110, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(8):last-child:hover:before, .navbar__item:first-child:nth-last-child(8) ~ li:last-child:hover:before {
     top: 87.5%;
     animation: gooeyEffect-8 250ms 1; }
@@ -596,13 +596,13 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 94, static/CSS/nav.scss */
+  /* line 94, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(9):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:hover ~ li:last-child:before {
     opacity: 1; }
-  /* line 98, static/CSS/nav.scss */
+  /* line 98, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(9):last-child:hover:before, .navbar__item:first-child:nth-last-child(9) ~ li:last-child:hover:before {
     opacity: 1; }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(9):nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
@@ -616,7 +616,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(9):nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
@@ -630,7 +630,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(9):nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
@@ -644,7 +644,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(9):nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
@@ -658,7 +658,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(9):nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
@@ -672,7 +672,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(9):nth-child(6):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(6):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
@@ -686,7 +686,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(9):nth-child(7):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(7):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
@@ -700,7 +700,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(9):nth-child(8):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(8):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
@@ -714,7 +714,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 110, static/CSS/nav.scss */
+  /* line 110, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(9):last-child:hover:before, .navbar__item:first-child:nth-last-child(9) ~ li:last-child:hover:before {
     top: 88.88889%;
     animation: gooeyEffect-9 250ms 1; }
@@ -726,13 +726,13 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 94, static/CSS/nav.scss */
+  /* line 94, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:hover ~ li:last-child:before {
     opacity: 1; }
-  /* line 98, static/CSS/nav.scss */
+  /* line 98, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):last-child:hover:before, .navbar__item:first-child:nth-last-child(10) ~ li:last-child:hover:before {
     opacity: 1; }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
@@ -746,7 +746,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
@@ -760,7 +760,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
@@ -774,7 +774,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
@@ -788,7 +788,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
@@ -802,7 +802,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):nth-child(6):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(6):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
@@ -816,7 +816,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):nth-child(7):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(7):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
@@ -830,7 +830,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):nth-child(8):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(8):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
@@ -844,7 +844,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):nth-child(9):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(9):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
@@ -858,7 +858,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 110, static/CSS/nav.scss */
+  /* line 110, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(10):last-child:hover:before, .navbar__item:first-child:nth-last-child(10) ~ li:last-child:hover:before {
     top: 90%;
     animation: gooeyEffect-10 250ms 1; }
@@ -870,13 +870,13 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 94, static/CSS/nav.scss */
+  /* line 94, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:hover ~ li:last-child:before {
     opacity: 1; }
-  /* line 98, static/CSS/nav.scss */
+  /* line 98, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):last-child:hover:before, .navbar__item:first-child:nth-last-child(11) ~ li:last-child:hover:before {
     opacity: 1; }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(1):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
@@ -890,7 +890,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(2):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
@@ -904,7 +904,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(3):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
@@ -918,7 +918,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(4):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
@@ -932,7 +932,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(5):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
@@ -946,7 +946,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):nth-child(6):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(6):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
@@ -960,7 +960,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):nth-child(7):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(7):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
@@ -974,7 +974,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):nth-child(8):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(8):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
@@ -988,7 +988,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):nth-child(9):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(9):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
@@ -1002,7 +1002,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 103, static/CSS/nav.scss */
+  /* line 103, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):nth-child(10):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(10):hover ~ li:last-child:before,
   .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
@@ -1016,7 +1016,7 @@ body {
     transform: scale(0.5, 1.5); }
   100% {
     transform: scale(1, 1); } }
-  /* line 110, static/CSS/nav.scss */
+  /* line 110, static/CSS/navbar.scss */
   .navbar__item:first-child:nth-last-child(11):last-child:hover:before, .navbar__item:first-child:nth-last-child(11) ~ li:last-child:hover:before {
     top: 90.90909%;
     animation: gooeyEffect-11 250ms 1; }

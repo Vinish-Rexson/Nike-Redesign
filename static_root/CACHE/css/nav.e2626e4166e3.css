@@ -6,7 +6,7 @@ body {
 
 /* line 27, static/CSS/navbar.scss */
 .navbar {
-  position: fixed;
+  position: relative;
   top: 1rem;
   left: 1rem;
   background: #fff;
@@ -16,7 +16,7 @@ body {
   height: calc(100vh - 4rem); }
   /* line 37, static/CSS/navbar.scss */
   .navbar__link {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;

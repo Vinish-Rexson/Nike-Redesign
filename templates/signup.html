@@ -7,11 +7,11 @@
 </head>
 <body>
 {% block content %}
-    <!-- <link rel="stylesheet" href="{% static 'CSS/signup.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/signup.css' %}">
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form action="" method="post">
-            {% csrf_token %}
+                {% csrf_token %}
                 <h1>Create Account</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
@@ -79,7 +79,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">var mode="{{ page }}"</script>
-    <script src="{% static 'JS/signup.js' %}"></script> -->
+    <script type="text/javascript">var mode = "{{ page }}"</script>
+    <script src="{% static 'JS/signup.js' %}"></script>
 {% endblock content %}
 </body>
