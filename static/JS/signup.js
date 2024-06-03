@@ -2,8 +2,6 @@ const container = document.getElementById('container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
 
-console.log(mode)
-
 if (mode === 'signup') {
     container.classList.add("active");
 }
