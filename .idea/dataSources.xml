@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="Nike" uuid="0afa77be-8bac-4f0f-b931-611f4b1d6370">
-      <driver-ref>sqlite.xerial</driver-ref>
+      <driver-ref>be233bff-c7e6-4c50-b444-73e1837d93d0</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:B:\Andrew\Code\Website\Nike\db.sqlite3</jdbc-url>
