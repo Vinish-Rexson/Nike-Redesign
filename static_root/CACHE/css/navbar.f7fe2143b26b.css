@@ -1,0 +1,1031 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+/* line 23, static/CSS/navbar.scss */
+body {
+  background: #eaeef6;
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 27, static/CSS/navbar.scss */
+.navbar {
+  position: fixed;
+  width: 25%;
+  top: 1rem;
+  left: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 0;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
+  height: calc(100vh - 4rem); }
+  /* line 38, static/CSS/navbar.scss */
+  .navbar__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 5.5rem;
+    color: #6a778e;
+    transition: 250ms ease all; }
+    /* line 47, static/CSS/navbar.scss */
+    .navbar__link span {
+      position: absolute;
+      left: 100%;
+      transform: translate(-3rem);
+      margin-left: 1rem;
+      opacity: 0;
+      pointer-events: none;
+      color: #406ff3;
+      background: #fff;
+      padding: 0.75rem;
+      transition: 250ms ease all;
+      border-radius: 17.5px; }
+    /* line 60, static/CSS/navbar.scss */
+    .navbar__link:hover {
+      color: #fff; }
+    /* line 65, static/CSS/navbar.scss */
+    .navbar:not(:hover) .navbar__link:focus span, .navbar__link:hover span {
+      opacity: 1;
+      transform: translate(0); }
+  /* line 71, static/CSS/navbar.scss */
+  .navbar__menu {
+    position: relative; }
+  /* line 76, static/CSS/navbar.scss */
+  .navbar__item:last-child:before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    left: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #406ff3;
+    border-radius: 17.5px;
+    transition: 250ms cubic-bezier(1, 0.2, 0.1, 1.2) all; }
+  /* line 95, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(1):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(1) ~ li:hover ~ li:last-child:before {
+    opacity: 1; }
+  /* line 99, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(1):last-child:hover:before, .navbar__item:first-child:nth-last-child(1) ~ li:last-child:hover:before {
+    opacity: 1; }
+  /* line 111, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(1):last-child:hover:before, .navbar__item:first-child:nth-last-child(1) ~ li:last-child:hover:before {
+    top: 0%;
+    animation: gooeyEffect-1 250ms 1; }
+
+@keyframes gooeyEffect-1 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 95, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(2):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(2) ~ li:hover ~ li:last-child:before {
+    opacity: 1; }
+  /* line 99, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(2):last-child:hover:before, .navbar__item:first-child:nth-last-child(2) ~ li:last-child:hover:before {
+    opacity: 1; }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(2):nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(2) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(2) ~ li:nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(2) ~ li ~ li:last-child:before {
+    top: 0%;
+    animation: gooeyEffect-1 250ms 1; }
+
+@keyframes gooeyEffect-1 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 111, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(2):last-child:hover:before, .navbar__item:first-child:nth-last-child(2) ~ li:last-child:hover:before {
+    top: 50%;
+    animation: gooeyEffect-2 250ms 1; }
+
+@keyframes gooeyEffect-2 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 95, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(3):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(3) ~ li:hover ~ li:last-child:before {
+    opacity: 1; }
+  /* line 99, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(3):last-child:hover:before, .navbar__item:first-child:nth-last-child(3) ~ li:last-child:hover:before {
+    opacity: 1; }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(3):nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(3) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(3) ~ li:nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(3) ~ li ~ li:last-child:before {
+    top: 0%;
+    animation: gooeyEffect-1 250ms 1; }
+
+@keyframes gooeyEffect-1 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(3):nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(3) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(3) ~ li:nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(3) ~ li ~ li:last-child:before {
+    top: 33.33333%;
+    animation: gooeyEffect-2 250ms 1; }
+
+@keyframes gooeyEffect-2 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 111, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(3):last-child:hover:before, .navbar__item:first-child:nth-last-child(3) ~ li:last-child:hover:before {
+    top: 66.66667%;
+    animation: gooeyEffect-3 250ms 1; }
+
+@keyframes gooeyEffect-3 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 95, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(4):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(4) ~ li:hover ~ li:last-child:before {
+    opacity: 1; }
+  /* line 99, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(4):last-child:hover:before, .navbar__item:first-child:nth-last-child(4) ~ li:last-child:hover:before {
+    opacity: 1; }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(4):nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(4) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(4) ~ li:nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(4) ~ li ~ li:last-child:before {
+    top: 0%;
+    animation: gooeyEffect-1 250ms 1; }
+
+@keyframes gooeyEffect-1 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(4):nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(4) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(4) ~ li:nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(4) ~ li ~ li:last-child:before {
+    top: 25%;
+    animation: gooeyEffect-2 250ms 1; }
+
+@keyframes gooeyEffect-2 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(4):nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(4) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(4) ~ li:nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(4) ~ li ~ li:last-child:before {
+    top: 50%;
+    animation: gooeyEffect-3 250ms 1; }
+
+@keyframes gooeyEffect-3 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 111, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(4):last-child:hover:before, .navbar__item:first-child:nth-last-child(4) ~ li:last-child:hover:before {
+    top: 75%;
+    animation: gooeyEffect-4 250ms 1; }
+
+@keyframes gooeyEffect-4 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 95, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(5):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(5) ~ li:hover ~ li:last-child:before {
+    opacity: 1; }
+  /* line 99, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(5):last-child:hover:before, .navbar__item:first-child:nth-last-child(5) ~ li:last-child:hover:before {
+    opacity: 1; }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(5):nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(5) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(5) ~ li:nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(5) ~ li ~ li:last-child:before {
+    top: 0%;
+    animation: gooeyEffect-1 250ms 1; }
+
+@keyframes gooeyEffect-1 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(5):nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(5) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(5) ~ li:nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(5) ~ li ~ li:last-child:before {
+    top: 20%;
+    animation: gooeyEffect-2 250ms 1; }
+
+@keyframes gooeyEffect-2 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(5):nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(5) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(5) ~ li:nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(5) ~ li ~ li:last-child:before {
+    top: 40%;
+    animation: gooeyEffect-3 250ms 1; }
+
+@keyframes gooeyEffect-3 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(5):nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(5) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(5) ~ li:nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(5) ~ li ~ li:last-child:before {
+    top: 60%;
+    animation: gooeyEffect-4 250ms 1; }
+
+@keyframes gooeyEffect-4 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 111, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(5):last-child:hover:before, .navbar__item:first-child:nth-last-child(5) ~ li:last-child:hover:before {
+    top: 80%;
+    animation: gooeyEffect-5 250ms 1; }
+
+@keyframes gooeyEffect-5 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 95, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(6):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:hover ~ li:last-child:before {
+    opacity: 1; }
+  /* line 99, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(6):last-child:hover:before, .navbar__item:first-child:nth-last-child(6) ~ li:last-child:hover:before {
+    opacity: 1; }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(6):nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(6) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(6) ~ li ~ li:last-child:before {
+    top: 0%;
+    animation: gooeyEffect-1 250ms 1; }
+
+@keyframes gooeyEffect-1 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(6):nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(6) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(6) ~ li ~ li:last-child:before {
+    top: 16.66667%;
+    animation: gooeyEffect-2 250ms 1; }
+
+@keyframes gooeyEffect-2 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(6):nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(6) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(6) ~ li ~ li:last-child:before {
+    top: 33.33333%;
+    animation: gooeyEffect-3 250ms 1; }
+
+@keyframes gooeyEffect-3 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(6):nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(6) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(6) ~ li ~ li:last-child:before {
+    top: 50%;
+    animation: gooeyEffect-4 250ms 1; }
+
+@keyframes gooeyEffect-4 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(6):nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(6) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(6) ~ li:nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(6) ~ li ~ li:last-child:before {
+    top: 66.66667%;
+    animation: gooeyEffect-5 250ms 1; }
+
+@keyframes gooeyEffect-5 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 111, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(6):last-child:hover:before, .navbar__item:first-child:nth-last-child(6) ~ li:last-child:hover:before {
+    top: 83.33333%;
+    animation: gooeyEffect-6 250ms 1; }
+
+@keyframes gooeyEffect-6 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 95, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(7):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:hover ~ li:last-child:before {
+    opacity: 1; }
+  /* line 99, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(7):last-child:hover:before, .navbar__item:first-child:nth-last-child(7) ~ li:last-child:hover:before {
+    opacity: 1; }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(7):nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
+    top: 0%;
+    animation: gooeyEffect-1 250ms 1; }
+
+@keyframes gooeyEffect-1 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(7):nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
+    top: 14.28571%;
+    animation: gooeyEffect-2 250ms 1; }
+
+@keyframes gooeyEffect-2 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(7):nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
+    top: 28.57143%;
+    animation: gooeyEffect-3 250ms 1; }
+
+@keyframes gooeyEffect-3 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(7):nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
+    top: 42.85714%;
+    animation: gooeyEffect-4 250ms 1; }
+
+@keyframes gooeyEffect-4 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(7):nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
+    top: 57.14286%;
+    animation: gooeyEffect-5 250ms 1; }
+
+@keyframes gooeyEffect-5 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(7):nth-child(6):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(7) ~ li:nth-child(6):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(7) ~ li ~ li:last-child:before {
+    top: 71.42857%;
+    animation: gooeyEffect-6 250ms 1; }
+
+@keyframes gooeyEffect-6 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 111, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(7):last-child:hover:before, .navbar__item:first-child:nth-last-child(7) ~ li:last-child:hover:before {
+    top: 85.71429%;
+    animation: gooeyEffect-7 250ms 1; }
+
+@keyframes gooeyEffect-7 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 95, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(8):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:hover ~ li:last-child:before {
+    opacity: 1; }
+  /* line 99, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(8):last-child:hover:before, .navbar__item:first-child:nth-last-child(8) ~ li:last-child:hover:before {
+    opacity: 1; }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(8):nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
+    top: 0%;
+    animation: gooeyEffect-1 250ms 1; }
+
+@keyframes gooeyEffect-1 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(8):nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
+    top: 12.5%;
+    animation: gooeyEffect-2 250ms 1; }
+
+@keyframes gooeyEffect-2 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(8):nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
+    top: 25%;
+    animation: gooeyEffect-3 250ms 1; }
+
+@keyframes gooeyEffect-3 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(8):nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
+    top: 37.5%;
+    animation: gooeyEffect-4 250ms 1; }
+
+@keyframes gooeyEffect-4 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(8):nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
+    top: 50%;
+    animation: gooeyEffect-5 250ms 1; }
+
+@keyframes gooeyEffect-5 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(8):nth-child(6):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(6):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
+    top: 62.5%;
+    animation: gooeyEffect-6 250ms 1; }
+
+@keyframes gooeyEffect-6 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(8):nth-child(7):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(8) ~ li:nth-child(7):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(8) ~ li ~ li:last-child:before {
+    top: 75%;
+    animation: gooeyEffect-7 250ms 1; }
+
+@keyframes gooeyEffect-7 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 111, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(8):last-child:hover:before, .navbar__item:first-child:nth-last-child(8) ~ li:last-child:hover:before {
+    top: 87.5%;
+    animation: gooeyEffect-8 250ms 1; }
+
+@keyframes gooeyEffect-8 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 95, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(9):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:hover ~ li:last-child:before {
+    opacity: 1; }
+  /* line 99, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(9):last-child:hover:before, .navbar__item:first-child:nth-last-child(9) ~ li:last-child:hover:before {
+    opacity: 1; }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(9):nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
+    top: 0%;
+    animation: gooeyEffect-1 250ms 1; }
+
+@keyframes gooeyEffect-1 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(9):nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
+    top: 11.11111%;
+    animation: gooeyEffect-2 250ms 1; }
+
+@keyframes gooeyEffect-2 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(9):nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
+    top: 22.22222%;
+    animation: gooeyEffect-3 250ms 1; }
+
+@keyframes gooeyEffect-3 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(9):nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
+    top: 33.33333%;
+    animation: gooeyEffect-4 250ms 1; }
+
+@keyframes gooeyEffect-4 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(9):nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
+    top: 44.44444%;
+    animation: gooeyEffect-5 250ms 1; }
+
+@keyframes gooeyEffect-5 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(9):nth-child(6):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(6):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
+    top: 55.55556%;
+    animation: gooeyEffect-6 250ms 1; }
+
+@keyframes gooeyEffect-6 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(9):nth-child(7):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(7):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
+    top: 66.66667%;
+    animation: gooeyEffect-7 250ms 1; }
+
+@keyframes gooeyEffect-7 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(9):nth-child(8):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(9) ~ li:nth-child(8):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(9) ~ li ~ li:last-child:before {
+    top: 77.77778%;
+    animation: gooeyEffect-8 250ms 1; }
+
+@keyframes gooeyEffect-8 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 111, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(9):last-child:hover:before, .navbar__item:first-child:nth-last-child(9) ~ li:last-child:hover:before {
+    top: 88.88889%;
+    animation: gooeyEffect-9 250ms 1; }
+
+@keyframes gooeyEffect-9 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 95, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:hover ~ li:last-child:before {
+    opacity: 1; }
+  /* line 99, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):last-child:hover:before, .navbar__item:first-child:nth-last-child(10) ~ li:last-child:hover:before {
+    opacity: 1; }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
+    top: 0%;
+    animation: gooeyEffect-1 250ms 1; }
+
+@keyframes gooeyEffect-1 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
+    top: 10%;
+    animation: gooeyEffect-2 250ms 1; }
+
+@keyframes gooeyEffect-2 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
+    top: 20%;
+    animation: gooeyEffect-3 250ms 1; }
+
+@keyframes gooeyEffect-3 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
+    top: 30%;
+    animation: gooeyEffect-4 250ms 1; }
+
+@keyframes gooeyEffect-4 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
+    top: 40%;
+    animation: gooeyEffect-5 250ms 1; }
+
+@keyframes gooeyEffect-5 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):nth-child(6):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(6):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
+    top: 50%;
+    animation: gooeyEffect-6 250ms 1; }
+
+@keyframes gooeyEffect-6 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):nth-child(7):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(7):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
+    top: 60%;
+    animation: gooeyEffect-7 250ms 1; }
+
+@keyframes gooeyEffect-7 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):nth-child(8):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(8):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
+    top: 70%;
+    animation: gooeyEffect-8 250ms 1; }
+
+@keyframes gooeyEffect-8 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):nth-child(9):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(10) ~ li:nth-child(9):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(10) ~ li ~ li:last-child:before {
+    top: 80%;
+    animation: gooeyEffect-9 250ms 1; }
+
+@keyframes gooeyEffect-9 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 111, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(10):last-child:hover:before, .navbar__item:first-child:nth-last-child(10) ~ li:last-child:hover:before {
+    top: 90%;
+    animation: gooeyEffect-10 250ms 1; }
+
+@keyframes gooeyEffect-10 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 95, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):hover ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:hover ~ li:last-child:before {
+    opacity: 1; }
+  /* line 99, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):last-child:hover:before, .navbar__item:first-child:nth-last-child(11) ~ li:last-child:hover:before {
+    opacity: 1; }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(1):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
+    top: 0%;
+    animation: gooeyEffect-1 250ms 1; }
+
+@keyframes gooeyEffect-1 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(2):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
+    top: 9.09091%;
+    animation: gooeyEffect-2 250ms 1; }
+
+@keyframes gooeyEffect-2 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(3):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
+    top: 18.18182%;
+    animation: gooeyEffect-3 250ms 1; }
+
+@keyframes gooeyEffect-3 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(4):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
+    top: 27.27273%;
+    animation: gooeyEffect-4 250ms 1; }
+
+@keyframes gooeyEffect-4 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(5):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
+    top: 36.36364%;
+    animation: gooeyEffect-5 250ms 1; }
+
+@keyframes gooeyEffect-5 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):nth-child(6):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(6):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
+    top: 45.45455%;
+    animation: gooeyEffect-6 250ms 1; }
+
+@keyframes gooeyEffect-6 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):nth-child(7):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(7):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
+    top: 54.54545%;
+    animation: gooeyEffect-7 250ms 1; }
+
+@keyframes gooeyEffect-7 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):nth-child(8):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(8):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
+    top: 63.63636%;
+    animation: gooeyEffect-8 250ms 1; }
+
+@keyframes gooeyEffect-8 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):nth-child(9):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(9):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
+    top: 72.72727%;
+    animation: gooeyEffect-9 250ms 1; }
+
+@keyframes gooeyEffect-9 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 104, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):nth-child(10):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li:last-child:before, .navbar__item:first-child:nth-last-child(11) ~ li:nth-child(10):hover ~ li:last-child:before,
+  .navbar__item:first-child:nth-last-child(11) ~ li ~ li:last-child:before {
+    top: 81.81818%;
+    animation: gooeyEffect-10 250ms 1; }
+
+@keyframes gooeyEffect-10 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+  /* line 111, static/CSS/navbar.scss */
+  .navbar__item:first-child:nth-last-child(11):last-child:hover:before, .navbar__item:first-child:nth-last-child(11) ~ li:last-child:hover:before {
+    top: 90.90909%;
+    animation: gooeyEffect-11 250ms 1; }
+
+@keyframes gooeyEffect-11 {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
